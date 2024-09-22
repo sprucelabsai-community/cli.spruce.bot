@@ -1,0 +1,151 @@
+html,
+body {
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('images/bg.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.3em;
+}
+
+.logo-container {
+    width: 100%;
+    max-width: 700px;
+    padding: 20px 20px 0;
+
+}
+
+.logo {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+header {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+header h2 {
+    padding: 0 20px;
+    font-size: 1.8em;
+    margin-top: 0;
+    text-align: center;
+}
+
+
+video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.video-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* Ensures the video respects the border-radius */
+}
+
+.video-container .video-padding {
+    box-shadow: 0 0 20px 20px rgba(0, 0, 0, 0.3);
+    /* Soft shadow around the video */
+    border-radius: 8px;
+    /* Optional: rounded corners for the video container */
+    overflow: hidden;
+    margin: 0 20px;
+}
+
+h3 {
+    font-size: 1.8em;
+    margin: 0px
+}
+
+.benefits {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 20px 0;
+
+}
+
+.benefits .benefit {
+    width: 100%;
+    max-width: 335px;
+    padding: 20px;
+    margin: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    text-align: left;
+}
+
+.benifit p {
+    font-size: 1.4em;
+}
+
+.get-started {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.get-started-button {
+    display: inline-block;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.get-started-button img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.get-started-button:hover,
+.get-started-button:focus {
+    transform: translateY(-5px);
+}
+
+.get-started-button:active {
+    transform: translateY(-2px);
+}
+
+.get-started-button:focus {
+    outline: 3px solid #4a90e2;
+    outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .get-started-button {
+        transition: none;
+    }
+}
