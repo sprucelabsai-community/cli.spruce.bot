@@ -95,7 +95,7 @@ h3 {
     justify-content: center;
     align-items: flex-start;
     margin: 20px 0;
-
+    max-width: 1200px;
 }
 
 .benefits .benefit {
@@ -108,8 +108,23 @@ h3 {
     text-align: left;
 }
 
-.benifit p {
-    font-size: 1.4em;
+.benefit p {
+    font-size: 1.0em;
+}
+
+.benefit p a {
+    color: white;
+}
+
+.quotes .benefit h3 {
+    font-style: italic;
+}
+
+main h2 {
+    font-size: 2em;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
 }
 
 .get-started {
